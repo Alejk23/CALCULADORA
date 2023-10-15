@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    position: absolute;
+    top: 1em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 3px;
+}
+
+.title2{
+    position: absolute;
+    top: 3em;
+    text-align: center;
+    color: #fff;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 3px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./fondo.jpg);
+    background-size: cover;
+}
+.calculadora{
+
+    box-shadow: 0px 0px 70px #666666;
+    /* backdrop-filter: grayscale(5); */
+    backdrop-filter: blur(5px);
+    padding: 1.5em;
+    display: grid;
+    height: 50%;
+    width: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 40px repeat(4, 1fr);
+    border-radius: 20px;
+}
+
+.calculadora button{
+    border: none;
+    background-color: #2f014ea9;
+    color: #ffffff;
+    transition: all .3s;
+}
+
+.calculadora button:hover{
+    border: none;
+    background-color: #000000c0;
+    color: #a2f3e6;
+    transition: all .1s;
+}
+
+.calculadora button:active{
+    border: none;
+    background-color: #555555c0;
+    color: #c2f0e8;
+    transition: all .1s;
+}
+
+
+.display {
+    grid-column: span 4;
+    border: 3px solid #2f014ea9;
+    background-color: #8a8a8a62;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    border: none;
+}
+
+.cero{
+    grid-column: span 2;
+}
+
+.C {
+    grid-column: span 2 ;
+    border: 1px solid #0011ff3d !important;
+}
